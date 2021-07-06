@@ -21,7 +21,7 @@ describe('Deck', () => {
   });
 
   it('Should be an instance of a Deck', () => {
-    expect(deck).to.be.an instanceof(Deck);
+    expect(deck).to.be.an.instanceof(Deck);
   });
 
   it('Should count cards in deck', () => {
