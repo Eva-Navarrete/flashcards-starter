@@ -150,6 +150,7 @@ const prototypeData = [{
   "correctAnswer": "prototype method"
 }]
 
+
 module.exports = {
-  prototypeData 
+  prototypeData
 }
