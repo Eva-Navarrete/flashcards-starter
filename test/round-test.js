@@ -77,14 +77,9 @@ describe('Round', () => {
 
   it('Should notify user that round has ended', () => {
     round.takeTurn('sea otter');
-   round.takeTurn('gallbladder');
-   round.takeTurn('playing with bubble wrap');
-   expect(round.endRound()).to.equal('** Round over! ** You answered 100% of the questions correctly!')
-  })
-
-
-
-
-
+    round.takeTurn('gallbladder');
+    round.takeTurn('playing with bubble wrap');
+    expect(round.endRound()).to.equal('** Round over! ** You answered 100% of the questions correctly!')
+  });
 
 });
