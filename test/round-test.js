@@ -75,11 +75,14 @@ describe('Round', () => {
     expect(round.calculatePercentCorrect()).to.equal(50);
   });
 
-  it('Should notify user that round has ended', () => {
+  it('Should notify user that round has ended with correct percentage and time', () => {
     round.takeTurn('sea otter');
     round.takeTurn('gallbladder');
     round.takeTurn('playing with bubble wrap');
-    expect(round.endRound()).to.equal('** Round over! ** You answered 100% of the questions correctly!')
+    round.calculatePercentCorrect();
+    round.endRound();
+    round.setGameTime();
+    expect(round.endRound()).to.equal(`** Round over! ** You answered 100% of the questions correctly! Round time: ${round.setGameTime()}!`)
   });
 
 });
