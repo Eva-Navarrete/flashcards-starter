@@ -11,13 +11,13 @@ class Game {
   }
 
   start() {
-    const newCard = prototypeQuestions.map(questions => {
-    return new Card(questions.id, questions.question, questions.answers, questions.correctAnswer);
+    const newCard = prototypeQuestions.map(question => {
+    return new Card(question.id, question.question, question.answers, question.correctAnswer);
   })
-  const newDeck = new Deck(newCard);
-  this.currentRound = new Round(newDeck);
-  this.printMessage(newDeck, this.currentRound);
-  this.printQuestion(this.currentRound);
+    const newDeck = new Deck(newCard);
+    this.currentRound = new Round(newDeck);
+    this.printMessage(newDeck, this.currentRound);
+    this.printQuestion(this.currentRound);
   }
 
   printMessage(deck, round) {
