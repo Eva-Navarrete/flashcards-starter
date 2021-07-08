@@ -26,6 +26,7 @@ To solidify and demonstrate the understanding of:
 
 ## How does this work?
  
+ ![](https://media.giphy.com/media/yVzeYTLBPviiySfwH2/giphy.gif)
 <!-- Giphy video link go in here -->
 
 
