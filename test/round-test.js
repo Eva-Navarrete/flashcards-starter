@@ -60,12 +60,12 @@ describe('Round', () => {
 
   it('Should evaluate if user guess is correct', () => {
     expect(round.takeTurn('sea otter')).to.equal('correct!');
-    expect(round.incorrectGuesses.length).to.eql(0);
+    expect(round.incorrectGuesses.length).to.equal(0);
   });
 
   it('should evaluate if user guess is incorrect and store in incorrect array', () => {
     expect(round.takeTurn('spleen')).to.equal('incorrect!');
-    expect(round.incorrectGuesses.length).to.eql(1);
+    expect(round.incorrectGuesses.length).to.equal(1);
   });
 
   it('Should calculate the percentage of correct guesses', () => {
